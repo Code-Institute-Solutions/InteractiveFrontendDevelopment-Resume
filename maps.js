@@ -27,7 +27,7 @@ function initMap() {
     });
   
     // Add a marker clusterer to manage the markers.
-    new MarkerClusterer({ markers, map });
+    const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   }
   
   const locations = [
@@ -54,6 +54,7 @@ function initMap() {
     { lat: -42.734358, lng: 147.501315 },
     { lat: -42.735258, lng: 147.438 },
     { lat: -43.999792, lng: 170.463352 },
+    { lat:  41.008469, lng: 28.9802 },
   ];
-  
+
   window.initMap = initMap;
